@@ -1,0 +1,23 @@
+{
+  "name": "cheffyjonny.github.io",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "authors": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cheffyjonny/blog.git"
+  },
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "docs:build": "vuepress build docs"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  }
+}

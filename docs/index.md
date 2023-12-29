@@ -6,10 +6,18 @@ actionText: View All
 actionLink: /React/
 features:
 - title: React
-  details: React V18 examples and issues
+  # details: React V18 examples and issues
+  details: Upcoming
+- title: TS
+  details: Upcoming
+- title: Vue
+  details: Upcoming
 - title: Playground
-  details: Quiz and forked examples
+  details: Upcoming
 - title: Diary
-  details: Experienced issues and daily study
+  details: Upcoming
+- title: etc
+  details: Upcoming
+
 footer: Made by John Lee with ♡
 ---

@@ -61,18 +61,18 @@ module.exports = {
         link: '/Vue/'
       },
       {
-        text: 'etc',
-        link: '/etc/'
-      },
-      {
         text: 'Playground',
         link: '/Playground/'
+      },
+      {
+        text: 'etc',
+        link: '/etc/'
       },
       {
         text: 'Info',
         items: [
           { text: 'Github', link: 'https://v1.vuepress.vuejs.org' },
-          { text: 'Contact', link: '/Playground/'  }
+          { text: 'Contact', link: 'https://github.com/cheffyjonny/blog/issues'  }
         ]
       }
     ],

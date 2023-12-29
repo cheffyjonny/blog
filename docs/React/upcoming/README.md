@@ -1,17 +1,17 @@
 ---
-title: 클립보드 텍스트 복사하기
-meta:
-  - name: description
-    content: 클립보드 텍스트 복사하기, react, queryCommandSupported, javascript, react16, react hook, 리엑트, 프론트엔드, 웹, web, javascript copy to clipboard, navigator, clipboard
-  - property: og:title
-    content: 클립보드 텍스트 복사하기
-  - property: og:description
-    content: 클립보드 텍스트 복사하기, react, queryCommandSupported, javascript, react16, react hook, 리엑트, 프론트엔드, 웹, web, javascript copy to clipboard, navigator, clipboard
-  - property: og:url
-    content: https://kyounghwan01.github.io/blog/React/clipboard-copy/
-tags: ["react", "JS"]
+title: Upcoming
+# meta:
+#   - name: description
+#     content: 클립보드 텍스트 복사하기, react, queryCommandSupported, javascript, react16, react hook, 리엑트, 프론트엔드, 웹, web, javascript copy to clipboard, navigator, clipboard
+#   - property: og:title
+#     content: 클립보드 텍스트 복사하기
+#   - property: og:description
+#     content: 클립보드 텍스트 복사하기, react, queryCommandSupported, javascript, react16, react hook, 리엑트, 프론트엔드, 웹, web, javascript copy to clipboard, navigator, clipboard
+#   - property: og:url
+#     content: https://kyounghwan01.github.io/blog/React/clipboard-copy/
+# tags: ["react", "JS"]
 ---
-
+<!-- 
 # 클립보드 텍스트 복사하기
 
 ## 서론
@@ -90,4 +90,4 @@ export default function ClipboardCopy() {
 
 <TagLinks />
 
-<Comment />
+<Comment /> -->

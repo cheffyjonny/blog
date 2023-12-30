@@ -9,7 +9,7 @@ features:
   # details: React V18 examples and issues
   details: Upcoming
 - title: TS
-  details: Upcoming
+  details: React with TS
 - title: Vue
   details: Upcoming
 - title: Playground

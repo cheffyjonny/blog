@@ -1,3 +1,2 @@
 # Guide
-
-- Upcoming
+- React with TypeScript

@@ -21,6 +21,7 @@
     "vuepress-plugin-sitemap": "^2.3.1"
   },
   "dependencies": {
+    "@vuepress/theme-default": "^1.9.10",
     "fs": "^0.0.1-security"
   }
 }

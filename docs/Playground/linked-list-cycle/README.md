@@ -43,7 +43,7 @@ Each node in the list contains an integer value and a next pointer that points t
 The primary task is to identify whether a cycle exists within the list. If a cycle is detected, the function should return True. Otherwise, it should return False.
 
 3. **Memory Efficiency:** <br>
-The question poses an implicit challenge: Can you solve it using O(1)O(1)O(1) memory, meaning constant extra space?
+The question poses an implicit challenge: Can you solve it using **_O(1)_** memory, meaning constant extra space?
 
 ### Strategies to Tackle the Problem
 1. **Hash Table Method:** <br>

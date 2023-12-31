@@ -1,2 +1,3 @@
 # Guide
-- Upcoming
+
+- Embrace the challenge! 🚀🌟

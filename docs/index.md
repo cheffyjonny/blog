@@ -13,7 +13,7 @@ features:
 - title: Vue
   details: Upcoming
 - title: Playground
-  details: Upcoming
+  details: Code challenge (Leet, Programmers)
 - title: Diary
   details: Upcoming
 - title: etc

@@ -1,8 +1,9 @@
 ---
 title: Big O Notation
+tags: ["Algorithm"]
 ---
 # Linked List Cycle
-Reposted, original post is at <a href="https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/">here</a>
+Reposted, the original post is at <a href="https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/">here</a>
 
 ## Introduction
 

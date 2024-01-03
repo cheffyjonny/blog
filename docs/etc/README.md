@@ -1,3 +1,4 @@
 # Guide
 
-- Upcoming
+- Algorithm
+- Dev tools

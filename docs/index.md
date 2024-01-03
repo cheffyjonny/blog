@@ -3,7 +3,7 @@ home: true
 # heroImage: https://v1.vuepress.vuejs.org/hero.png
 
 actionText: View All
-actionLink: /React/
+actionLink: /tag/
 features:
 - title: React
   # details: React V18 examples and issues
@@ -17,7 +17,7 @@ features:
 - title: Diary
   details: Upcoming
 - title: etc
-  details: Upcoming
+  details: Algorithm, dev tools
 
 footer: Made by John Lee with ♡
 ---

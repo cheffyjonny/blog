@@ -1,27 +1,34 @@
 {
-  "name": "cheffyjonny.github.io",
-  "version": "0.0.1",
+  "name": "blog",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "authors": "",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cheffyjonny/blog.git"
-  },
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs",
+    "doc": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kyounghwan01/blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kyounghwan01/blog/issues"
+  },
+  "homepage": "https://github.com/Kyounghwan01/blog#readme",
   "devDependencies": {
-    "@vuepress/plugin-back-to-top": "^1.9.10",
-    "@vuepress/plugin-last-updated": "^1.9.10",
-    "vuepress": "^1.5.3",
+    "@vuepress/plugin-back-to-top": "^1.5.2",
+    "@vuepress/plugin-google-analytics": "^1.5.2",
+    "@vuepress/plugin-last-updated": "^1.9.5",
+    "vue-google-adsense": "^1.9.2",
+    "vue-script2": "^2.1.0",
+    "vuepress": "^1.5.2",
+    "vuepress-plugin-code-copy": "^1.0.6",
     "vuepress-plugin-sitemap": "^2.3.1"
   },
   "dependencies": {
-    "@vuepress/theme-default": "^1.9.10",
     "fs": "^0.0.1-security"
   }
 }

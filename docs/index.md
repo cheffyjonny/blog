@@ -6,8 +6,7 @@ actionText: View All
 actionLink: /tag/
 features:
 - title: React
-  # details: React V18 examples and issues
-  details: Upcoming
+  details: React V18 examples and issues
 - title: TS
   details: React with TS
 - title: Vue

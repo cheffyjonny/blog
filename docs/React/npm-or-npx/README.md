@@ -1,10 +1,10 @@
 ---
-title: NPM or NPX
+title: NPM vs NPX
 
 tags: ["React"]
 ---
 
-# Difference between npm and npx
+# NPM vs NPX
 
 ## Introduction
 

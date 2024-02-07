@@ -3,7 +3,7 @@ title: Big O Notation
 tags: ["Algorithm"]
 ---
 # Linked List Cycle
-Reposted, the original post is at <a href="https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/">here</a>
+Re-posted, the original post is at <a href="https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/">here</a>
 
 ## Introduction
 
@@ -148,12 +148,7 @@ console.log(recursiveFibonacci(6)); // 8
 
 
 
-
-
-
-
-<br>
-<br>
+[Time to practice!](https://cheffyjonny.github.io/blog/Playground/linked-list-cycle)
 
 
 ```

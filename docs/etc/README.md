@@ -1,4 +1,2 @@
 # Guide
-
-- Algorithm
 - Dev tools

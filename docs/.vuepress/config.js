@@ -3,7 +3,8 @@ const routes = [
   "React",
   "TS",
   "etc",
-  "Playground"
+  "Playground",
+  "Logic"
 ];
 
 const createSidebar = () => {
@@ -65,6 +66,10 @@ module.exports = {
         link: '/Playground/'
       },
       {
+        text: 'Logic',
+        link: '/Logic/'
+      },
+      {
         text: 'etc',
         link: '/etc/'
       },
@@ -87,6 +92,16 @@ module.exports = {
     ['@vuepress/plugin-back-to-top'],
     ['@vuepress/plugin-medium-zoom'],
     ['@vuepress/last-updated'],
-    ['@vuepress/back-to-top']
+    ['@vuepress/back-to-top'],
+    [
+      '@adamdehaven/vuepress-plugin-custom-tooltip',
+      {
+        name: 'VueCustomTooltip',
+        color: '#fff',
+        background: '#000',
+        borderRadius: 100,
+        fontWeight: 400,
+      },
+    ],
   ]
 }

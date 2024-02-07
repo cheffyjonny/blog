@@ -2,6 +2,21 @@
 # yarn lockfile v1
 
 
+"@adamdehaven/vue-custom-tooltip@^1.4.3":
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/@adamdehaven/vue-custom-tooltip/-/vue-custom-tooltip-1.4.4.tgz#e250f453748510e8583f97ab27fc7a5c7ade8326"
+  integrity sha512-74kfeaw56bGhz96KXSbsg4XLnfaR+l+Mt11umK57+kk/T66QDHjjcpwJGEfjrF/+vvk7RIj71hAj4cbgXN7rpA==
+  dependencies:
+    core-js "^3.8.3"
+    vue "^2.6.12"
+
+"@adamdehaven/vuepress-plugin-custom-tooltip@^1.4.3":
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/@adamdehaven/vuepress-plugin-custom-tooltip/-/vuepress-plugin-custom-tooltip-1.4.3.tgz#91942aa157061734920eb265634abbab4dd3a42d"
+  integrity sha512-6psTUHwuEsyYQu+p1bdl/q5E/K+8PFKharO7tF8kkPiM/Noo6dYM7H7Tv8H9GCTU70lcj8iseMSdAixQqN59fA==
+  dependencies:
+    "@adamdehaven/vue-custom-tooltip" "^1.4.3"
+
 "@ampproject/remapping@^2.2.0":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@ampproject/remapping/-/remapping-2.2.1.tgz#99e8e11851128b8702cd57c33684f1d0f260b630"
@@ -2848,6 +2863,11 @@ core-js@^3.6.4, core-js@^3.6.5:
   version "3.35.0"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.35.0.tgz#58e651688484f83c34196ca13f099574ee53d6b4"
   integrity sha512-ntakECeqg81KqMueeGJ79Q5ZgQNR+6eaE8sxGCx62zMbAIj65q+uYvatToew3m6eAGdU4gNZwpZ34NMe4GYswg==
+
+core-js@^3.8.3:
+  version "3.35.1"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.35.1.tgz#9c28f8b7ccee482796f8590cc8d15739eaaf980c"
+  integrity sha512-IgdsbxNyMskrTFxa9lWHyMwAJU5gXOPP+1yO+K59d50VLVAIDAbs7gIv705KzALModfK3ZrSZTPNpC0PQgIZuw==
 
 core-util-is@1.0.2:
   version "1.0.2"
@@ -8442,7 +8462,7 @@ vue-template-es2015-compiler@^1.9.0:
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
 
-vue@^2.6.10:
+vue@^2.6.10, vue@^2.6.12:
   version "2.7.16"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.7.16.tgz#98c60de9def99c0e3da8dae59b304ead43b967c9"
   integrity sha512-4gCtFXaAA3zYZdTp5s4Hl2sozuySsgz4jy1EnpBHNfpMa9dK1ZCG7viqBPCwXtmgc8nHqUsAu3G4gtmXkkY3Sw==

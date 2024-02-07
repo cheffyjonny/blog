@@ -8,15 +8,15 @@ features:
 - title: React
   details: React V18 examples and issues
 - title: TS
-  details: React with TS
+  details: TS examples and TS with React
 - title: Vue
   details: Upcoming
 - title: Playground
   details: Code challenge (Leet, Programmers)
-- title: Diary
-  details: Upcoming
+- title: Logic
+  details: Algorithm, Technique
 - title: etc
-  details: Algorithm, dev tools
+  details: Dev tools
 
 footer: Made by John Lee with ♡
 ---

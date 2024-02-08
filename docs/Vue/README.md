@@ -1,3 +1,2 @@
 # Guide
-
-- Upcoming
+Upcoming

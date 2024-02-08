@@ -33,8 +33,7 @@ Output: `[8,9,9,9,0,0,0,1]` <br>
 - `0 <= Node.val <= 9`
 - It is guaranteed that the list represents a number that does not have leading zeros.
 
-
-## Solutions
+## Introduction & Problem Understanding
 In this problem, you need to calculate the sum of reversed Linked lists. <br>
 Mathematics calculates number from the right to left. <br>
 e.g.<br> 
@@ -63,8 +62,7 @@ Increase the index ( index + 1 => 2 )
  
 Continue until the values and carry 0
 
-
-
+## Solutions
 <code-group>
 <code-block title="PHP">
 

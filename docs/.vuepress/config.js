@@ -4,7 +4,7 @@ const routes = [
   "TS",
   "etc",
   "Playground",
-  "Logic"
+  "Lab"
 ];
 
 const createSidebar = () => {
@@ -24,7 +24,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
-  description: 'Personal notepad for understanding than memorizing',
+  description: 'Personal notepad for understanding not memorizing',
 
   /**
    * Extra tags to be injected to the page HTML `<head>`
@@ -66,8 +66,8 @@ module.exports = {
         link: '/Playground/'
       },
       {
-        text: 'Logic',
-        link: '/Logic/'
+        text: 'Lab',
+        link: '/Lab/'
       },
       {
         text: 'etc',

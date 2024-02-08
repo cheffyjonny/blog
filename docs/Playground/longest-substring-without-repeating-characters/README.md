@@ -45,6 +45,7 @@ The length can be **fixed**, as in the example above, or it can be **dynamic**, 
 So to solve this problem, we can use the hash table and iterate over our term. Let's do two checks on 0 and 1 so as not to waste extra time. Now we can start, in the picture above you can see our **window** and its movement during the scan. We gradually add our letters to the **hash table**, and if it already contains this letter, we delete the letter corresponding to the leftmost index, do this until we get to the desired one and delete the repetition. Only after that we add our new element.
 The maximum length is found by comparing our current length with the new one, using `Math.max`.
 
+## Solution
 <code-group>
 <code-block title="PHP">
 

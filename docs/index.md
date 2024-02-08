@@ -13,7 +13,7 @@ features:
   details: Upcoming
 - title: Playground
   details: Code challenge (Leet, Programmers)
-- title: Logic
+- title: Lab
   details: Algorithm, Technique
 - title: etc
   details: Dev tools

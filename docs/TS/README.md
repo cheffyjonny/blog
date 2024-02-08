@@ -1,2 +1,2 @@
 # Guide
-- React with TypeScript
+TS examples and TS with React

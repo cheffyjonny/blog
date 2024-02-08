@@ -1,3 +1,2 @@
 # Guide
-
-- Embrace the challenge! 🚀🌟
+Embrace the challenge! 🚀🌟

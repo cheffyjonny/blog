@@ -5,7 +5,7 @@ title: Context API vs Redux
 tags: ["React"]
 ---
 
-# Difference between npm and npx
+# Context API vs Redux
 
 ## Introduction
 

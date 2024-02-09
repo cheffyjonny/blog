@@ -1,9 +1,9 @@
 ---
 title: Window Sliding Technique
-tags: ["Algorithm"]
+tags: ["Logic"]
 ---
 
-# Linked List Cycle
+# Window Sliding Technique
 Re-posted, the original post is at <a href="https://www.geeksforgeeks.org/window-sliding-technique/">here</a>
 
 ## Introduction

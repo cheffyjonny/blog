@@ -1,8 +1,8 @@
 ---
 title: Big O Notation
-tags: ["Algorithm"]
+tags: ["Logic"]
 ---
-# Linked List Cycle
+# Big O Notation
 Re-posted, the original post is at <a href="https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/">here</a>
 
 ## Introduction

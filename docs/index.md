@@ -14,7 +14,7 @@ features:
 - title: Playground
   details: Code challenge (Leet, Programmers)
 - title: Lab
-  details: Algorithm, Technique
+  details: Algorithm, Technique, Engineering
 - title: etc
   details: Dev tools
 

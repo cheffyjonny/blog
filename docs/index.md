@@ -9,6 +9,8 @@ features:
   details: React V18 examples and issues
 - title: TS
   details: TS examples and TS with React
+- title: JavaScript
+  details: JavaScript logics and examples
 - title: Vue
   details: Upcoming
 - title: Playground

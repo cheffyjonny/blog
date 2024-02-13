@@ -2,6 +2,7 @@ const routes = [
   "Vue",
   "React",
   "TS",
+  "JavaScript",
   "etc",
   "Playground",
   "Lab"
@@ -56,6 +57,10 @@ module.exports = {
       {
         text: 'TS',
         link: '/TS/'
+      },
+      {
+        text: 'JavaScript',
+        link: '/JavaScript/'
       },
       {
         text: 'Vue',

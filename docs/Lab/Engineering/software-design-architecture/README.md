@@ -12,35 +12,64 @@ By following architectural pattern, you would be able to improve system's scalab
 
 ## MVC (Model - View - Controller)
 
-- Model - This component stores the <span style="background-color:yellow">**application data.**</span> It has no knowledge about the interface. The model is responsible for handling the <span style="background-color:yellow">**domain logic(real-world business rules)**</span> and communication with the <span style="background-color:yellow">**database and network layers**</span>.
+- **Model** - This component stores the <span style="background-color:yellow">**application data.**</span> It has no knowledge about the interface. The model is responsible for handling the <span style="background-color:yellow">**domain logic(real-world business rules)**</span> and communication with the <span style="background-color:yellow">**database and network layers**</span>.
 
-- View - It is the <span style="background-color:yellow">**UI(User Interface)**</span> layer that holds components that are visible on the screen. Moreover, it provides the visualization of the data stored in the Model and offers interaction to the user.
+- **View** - It is the <span style="background-color:yellow">**UI(User Interface)**</span> layer that holds components that are visible on the screen. Moreover, it provides the visualization of the data stored in the Model and offers interaction to the user.
 
-- Controller - This component establishes the relationship between the View and the Model. It contains the <span style="background-color:yellow">**core application logic**</span> and gets informed of the <span style="background-color:yellow">**user’s response**</span> and updates the Model as per the need.
+- **Controller** - This component establishes the relationship between the View and the Model. It contains the <span style="background-color:yellow">**core application logic**</span> and gets informed of the <span style="background-color:yellow">**user’s response**</span> and updates the Model as per the need.
+
+### Strength
+
+1. **Separation of Concerns**: MVC separates the application into three components, making it easier to manage and maintain.
+2. **Widely Adopted**: MVC is a well-known and widely adopted pattern, making it easier for developers to understand and work with existing codebases.
+
+### Weaknesses
+
+1. **Complexity**: MVC can become complex, especially in large applications, making it challenging to manage.
+2. **Synchronization**: In some cases, synchronization between the Model and View can be difficult to manage.
+3. **Tight Coupling**: Views are often tightly coupled to controllers, which can lead to maintenance issues and make it harder to reuse code.
 
 ![An image](./mvc.png) <br>
 
 ## MVP (Model - View - Presenter)
 
-- Model - Layer for <span style="background-color:yellow">**storing data.**</span> It is responsible for handling the <span style="background-color:yellow">**domain logic(real-world business rules)**</span> and communication with the <span style="background-color:yellow">**database and network layers.**</span>
+- **Model** - Layer for <span style="background-color:yellow">**storing data.**</span> It is responsible for handling the <span style="background-color:yellow">**domain logic(real-world business rules)**</span> and communication with the <span style="background-color:yellow">**database and network layers.**</span>
 
-- View - <span style="background-color:yellow">**UI(User Interface)**</span> layer. It provides the visualization of the data and keep a <span style="background-color:yellow">**track of the user’s action**</span> in order to notify the Presenter. <br>
+- **View** - <span style="background-color:yellow">**UI(User Interface)**</span> layer. It provides the visualization of the data and keep a <span style="background-color:yellow">**track of the user’s action**</span> in order to notify the Presenter. <br>
 
   By Isolating UI Logic, MVP enables the View to focus strictly drawing visuals for cleaner code, testing
 
-- Presenter - <span style="background-color:yellow">**Fetch the data**</span> from the model and <span style="background-color:yellow">**applies the UI logic**</span> to decide what to display. It <span style="background-color:yellow">**manages the state of the View**</span> and takes actions according to the user’s input notification from the View. <br>
+- **Presenter** - <span style="background-color:yellow">**Fetch the data**</span> from the model and <span style="background-color:yellow">**applies the UI logic**</span> to decide what to display. It <span style="background-color:yellow">**manages the state of the View**</span> and takes actions according to the user’s input notification from the View. <br>
+
+### Strength
+
+1. **Testability**: MVP makes it easier to test the presenter and the view independently, enhancing overall testability.
+2. **Reduced Coupling**: Presenters in MVP act as intermediaries between the View and the Model, reducing coupling between these components.
+
+### Weaknesses
+
+1. **Complexity**: Like MVC, MVP can become complex, especially in large applications.
 
 ![An image](./mvp.png) <br>
 
 ## MVVM (Model — View — ViewModel)
 
-- Model - Layer for <span style="background-color:yellow">**storing data.**</span> It is responsible for handling the <span style="background-color:yellow">**domain logic(real-world business rules)**</span> and communication with the <span style="background-color:yellow">**database and network layers.**</span>
+- **Model** - Layer for <span style="background-color:yellow">**storing data.**</span> It is responsible for handling the <span style="background-color:yellow">**domain logic(real-world business rules)**</span> and communication with the <span style="background-color:yellow">**database and network layers.**</span>
 
-- View - The purpose of this layer is to <span style="background-color:yellow">**inform the ViewModel about the user’s action.**</span> This layer observes the ViewModel and does not contain any kind of application logic.
+- **View** - The purpose of this layer is to <span style="background-color:yellow">**inform the ViewModel about the user’s action.**</span> This layer observes the ViewModel and does not contain any kind of application logic.
 
-- ViewModel - <span style="background-color:yellow">**The logic that binds the data to the view**</span> - It is an <span style="background-color:yellow">**abstraction of the view**</span> that exposes the data and commands that the view can bind to. The view model does not reference the view, but instead <span style="background-color:yellow">**uses data binding**</span> and events to notify the view of any changes.
+- **ViewModel** - <span style="background-color:yellow">**The logic that binds the data to the view**</span> - It is an <span style="background-color:yellow">**abstraction of the view**</span> that exposes the data and commands that the view can bind to. The view model does not reference the view, but instead <span style="background-color:yellow">**uses data binding**</span> and events to notify the view of any changes.
 
-![An image](./mvvm.png)
+### Strength
+
+1. **Data Binding**: MVVM relies heavily on data binding, which reduces boilerplate code and makes it easier to synchronize the View and the ViewModel.
+2. **Loose Coupling**: MVVM reduces coupling between components, as the ViewModel does not directly reference the View.
+
+### Weaknesses
+
+1. **Performance Overhead**: In some cases, data binding and reactive programming may introduce performance overhead,
+2. **Complexity**: Implementing data binding and understanding reactive programming concepts can add complexity, especially for developers new to the pattern.
+   ![An image](./mvvm.png)
 
 ## Difference
 
@@ -55,26 +84,14 @@ By following architectural pattern, you would be able to improve system's scalab
 | Ideal for small scale projects only.                                                                                                                                                                                             | Ideal for simple and complex applications.                                                                                                                                                                         | Not ideal for small scale projects.                                                                                                                                                                                                                                                |
 | Limited support to Unit testing.                                                                                                                                                                                                 | Easy to carry out Unit testing but a tight bond of View and Presenter can make it slightly difficult.                                                                                                              | Unit testability is highest in this architecture.                                                                                                                                                                                                                                  |
 
-## Comparing the Trio: Strengths and Weaknesses
-
-<span style="background-color:yellow"></span>
-
-- **MVC's Balance**: MVC strikes a harmonious chord in software architecture, adeptly dividing responsibilities for evolving user interfaces and intricate data manipulation. <span style="background-color:yellow">This balance safeguards code organization while enabling UI updates without disrupting core logic.</span> However, interdependencies can arise, <span style="background-color:yellow">complicating maintenance and testing.</span> The equilibrium that empowers web developers must prevent unintended entanglements.
-
-- **MVVM's Elegance**: MVVM exudes elegance, tailor-made for intricate user interfaces and fluid interactions. <span style="background-color:yellow">Its separation of concerns empowers designers and developers to collaborate while maintaining code integrity.</span> <span style="background-color:yellow">Ideal for UI-intensive projects,</span> MVVM introduces the ViewModel layer as a bridge between Model and View, enabling dynamic updates and interactions. Yet, <span style="background-color:yellow">newcomers may encounter a learning curve due to the abstraction, and simple applications might find this elegance overly elaborate.</span>
-
-- **MVP's Control**: MVP offers <span style="background-color:yellow">precise control over interactions,</span>
-  excelling in scenarios demanding dynamic user input or validation processes. <span style="background-color:yellow">It champions the separation of concerns and test-driven development,</span> yielding resilient applications. MVP's Presenter mediates user interactions, enhancing code maintainability. However, <span style="background-color:yellow">this separation introduces complexity, potentially increasing code volume</span>
-  . The granular control of MVP necessitates a balance between benefits and intricacies.
-
 Generally, <span style="background-color:yellow">MVC is suitable for web applications</span> that need to support <span style="background-color:yellow">multiple platforms, browsers,</span> or devices, separating the logic and presentation layers. <span style="background-color:yellow">MVP is ideal for desktop or mobile applications with a rich and interactive user interface</span> that requires easy <span style="background-color:yellow">testing and maintenance.</span> Additionally, <span style="background-color:yellow">MVVM is best for XAML-based applications</span> that need a dynamic and <span style="background-color:yellow">data-driven user interface</span>, leveraging data binding and event-driven features.
 
 ## Reference
 
-<a href="https://www.youtube.com/watch?v=I5c7fBgvkNY&ab_channel=ByteByteGo">Video</a><br>
-<a href="https://www.linkedin.com/advice/3/how-do-you-compare-contrast-mvc-mvp-mvvm">Article 1</a> <br>
-<a href="https://www.masaischool.com/blog/comparing-software-architecture-patterns/#:~:text=MVC%2C%20MVVM%2C%20and%20MVP%20are,a%20Presenter%20to%20mediate%20interactions.">Article 2</a><br>
-<a href="https://www.geeksforgeeks.org/difference-between-mvc-mvp-and-mvvm-architecture-pattern-in-android/?ref=header_search">Article 3</a>
+- <a href="https://www.youtube.com/watch?v=I5c7fBgvkNY&ab_channel=ByteByteGo">Everything You NEED to Know About Client Architecture Patterns(YouTube)</a><br>
+- <a href="https://www.linkedin.com/advice/3/how-do-you-compare-contrast-mvc-mvp-mvvm">How do you compare and contrast the MVC, MVP, and MVVM patterns for user interface design?(LinkedIn)</a> <br>
+- <a href="https://www.masaischool.com/blog/comparing-software-architecture-patterns/#:~:text=MVC%2C%20MVVM%2C%20and%20MVP%20are,a%20Presenter%20to%20mediate%20interactions.">Comparing Software Architecture Patterns MVC Vs. MVVM Vs. MVP(Masai)</a><br>
+- <a href="https://www.geeksforgeeks.org/difference-between-mvc-mvp-and-mvvm-architecture-pattern-in-android/?ref=header_search">How do you compare and contrast the MVC, MVP, and MVVM patterns for user interface design?(geeksforgeeks)</a>
 
 <br>
 <br>

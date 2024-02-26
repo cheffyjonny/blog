@@ -38,7 +38,7 @@ By following architectural pattern, you would be able to improve system's scalab
 
 - View - The purpose of this layer is to <span style="background-color:yellow">**inform the ViewModel about the user’s action.**</span> This layer observes the ViewModel and does not contain any kind of application logic.
 
-- ViewModel - It acts as an <span style="background-color:yellow">**intermediary between the Model and the View.**</span> It encapsulates the presentation logic, exposing data and <span style="background-color:yellow">**commands the View can directly bind to.**</span>
+- ViewModel - <span style="background-color:yellow">**The logic that binds the data to the view**</span> - It is an <span style="background-color:yellow">**abstraction of the view**</span> that exposes the data and commands that the view can bind to. The view model does not reference the view, but instead <span style="background-color:yellow">**uses data binding**</span> and events to notify the view of any changes.
 
 ![An image](./mvvm.png)
 

@@ -69,6 +69,13 @@ By following architectural pattern, you would be able to improve system's scalab
 
 Generally, <span style="background-color:yellow">MVC is suitable for web applications</span> that need to support <span style="background-color:yellow">multiple platforms, browsers,</span> or devices, separating the logic and presentation layers. <span style="background-color:yellow">MVP is ideal for desktop or mobile applications with a rich and interactive user interface</span> that requires easy <span style="background-color:yellow">testing and maintenance.</span> Additionally, <span style="background-color:yellow">MVVM is best for XAML-based applications</span> that need a dynamic and <span style="background-color:yellow">data-driven user interface</span>, leveraging data binding and event-driven features.
 
+## Reference
+
+<a href="https://www.youtube.com/watch?v=I5c7fBgvkNY&ab_channel=ByteByteGo">Video</a><br>
+<a href="https://www.linkedin.com/advice/3/how-do-you-compare-contrast-mvc-mvp-mvvm">Article 1</a> <br>
+<a href="https://www.masaischool.com/blog/comparing-software-architecture-patterns/#:~:text=MVC%2C%20MVVM%2C%20and%20MVP%20are,a%20Presenter%20to%20mediate%20interactions.">Article 2</a><br>
+<a href="https://www.geeksforgeeks.org/difference-between-mvc-mvp-and-mvvm-architecture-pattern-in-android/?ref=header_search">Article 3</a>
+
 <br>
 <br>
 

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Closure | Step By Step</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="Personal notepad for understanding not memorizing">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.e6d10e96.css" as="style"><link rel="preload" href="/blog/assets/js/app.d505e500.js" as="script"><link rel="preload" href="/blog/assets/js/2.9fa96975.js" as="script"><link rel="preload" href="/blog/assets/js/1.1eca5f96.js" as="script"><link rel="preload" href="/blog/assets/js/34.03208e80.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.b809db33.js"><link rel="prefetch" href="/blog/assets/js/11.337011df.js"><link rel="prefetch" href="/blog/assets/js/12.d535b93e.js"><link rel="prefetch" href="/blog/assets/js/13.799b39dd.js"><link rel="prefetch" href="/blog/assets/js/14.170a91ce.js"><link rel="prefetch" href="/blog/assets/js/15.412ba547.js"><link rel="prefetch" href="/blog/assets/js/16.8e447990.js"><link rel="prefetch" href="/blog/assets/js/17.a1d6927f.js"><link rel="prefetch" href="/blog/assets/js/18.91589379.js"><link rel="prefetch" href="/blog/assets/js/19.5f99b0af.js"><link rel="prefetch" href="/blog/assets/js/20.6518c807.js"><link rel="prefetch" href="/blog/assets/js/21.52d81df6.js"><link rel="prefetch" href="/blog/assets/js/22.fc8fc096.js"><link rel="prefetch" href="/blog/assets/js/23.09ae2cb3.js"><link rel="prefetch" href="/blog/assets/js/24.d18c3f12.js"><link rel="prefetch" href="/blog/assets/js/25.3bc88d6c.js"><link rel="prefetch" href="/blog/assets/js/26.cc5b1e87.js"><link rel="prefetch" href="/blog/assets/js/27.216bcbb9.js"><link rel="prefetch" href="/blog/assets/js/28.6d4d7b95.js"><link rel="prefetch" href="/blog/assets/js/29.39d9eb0e.js"><link rel="prefetch" href="/blog/assets/js/3.59669f5d.js"><link rel="prefetch" href="/blog/assets/js/30.c728a879.js"><link rel="prefetch" href="/blog/assets/js/31.4d48517f.js"><link rel="prefetch" href="/blog/assets/js/32.c53609e0.js"><link rel="prefetch" href="/blog/assets/js/33.1cff588e.js"><link rel="prefetch" href="/blog/assets/js/35.af309a60.js"><link rel="prefetch" href="/blog/assets/js/36.8db332ae.js"><link rel="prefetch" href="/blog/assets/js/37.43dd81d0.js"><link rel="prefetch" href="/blog/assets/js/38.a3bf2bd9.js"><link rel="prefetch" href="/blog/assets/js/39.33d4db7e.js"><link rel="prefetch" href="/blog/assets/js/4.f6d71f50.js"><link rel="prefetch" href="/blog/assets/js/40.a95a3a46.js"><link rel="prefetch" href="/blog/assets/js/41.92f905f9.js"><link rel="prefetch" href="/blog/assets/js/42.5045f875.js"><link rel="prefetch" href="/blog/assets/js/43.eda87234.js"><link rel="prefetch" href="/blog/assets/js/44.dfd3d2bc.js"><link rel="prefetch" href="/blog/assets/js/45.0731e2d5.js"><link rel="prefetch" href="/blog/assets/js/46.4414c255.js"><link rel="prefetch" href="/blog/assets/js/47.485bed85.js"><link rel="prefetch" href="/blog/assets/js/48.ebda031f.js"><link rel="prefetch" href="/blog/assets/js/49.13770919.js"><link rel="prefetch" href="/blog/assets/js/5.f105f072.js"><link rel="prefetch" href="/blog/assets/js/50.687886e5.js"><link rel="prefetch" href="/blog/assets/js/51.b9b3ef84.js"><link rel="prefetch" href="/blog/assets/js/52.16e2fb74.js"><link rel="prefetch" href="/blog/assets/js/53.e409a156.js"><link rel="prefetch" href="/blog/assets/js/54.0433e984.js"><link rel="prefetch" href="/blog/assets/js/55.43d298b9.js"><link rel="prefetch" href="/blog/assets/js/56.c87c1207.js"><link rel="prefetch" href="/blog/assets/js/57.60702b58.js"><link rel="prefetch" href="/blog/assets/js/58.8a8d3df9.js"><link rel="prefetch" href="/blog/assets/js/6.14ca182e.js"><link rel="prefetch" href="/blog/assets/js/7.c82d865d.js"><link rel="prefetch" href="/blog/assets/js/vendors~docsearch.84d95967.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.e6d10e96.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">Step By Step</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/React/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/blog/TS/" class="nav-link">
+  TS
+</a></div><div class="nav-item"><a href="/blog/JavaScript/" class="nav-link">
+  JavaScript
+</a></div><div class="nav-item"><a href="/blog/Vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/blog/Playground/" class="nav-link">
+  Playground
+</a></div><div class="nav-item"><a href="/blog/Lab/" class="nav-link router-link-active">
+  Lab
+</a></div><div class="nav-item"><a href="/blog/etc/" class="nav-link">
+  etc
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Info" class="dropdown-title"><span class="title">Info</span> <span class="arrow down"></span></button> <button type="button" aria-label="Info" class="mobile-dropdown-title"><span class="title">Info</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://v1.vuepress.vuejs.org" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/cheffyjonny/blog/issues" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Contact
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/React/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/blog/TS/" class="nav-link">
+  TS
+</a></div><div class="nav-item"><a href="/blog/JavaScript/" class="nav-link">
+  JavaScript
+</a></div><div class="nav-item"><a href="/blog/Vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/blog/Playground/" class="nav-link">
+  Playground
+</a></div><div class="nav-item"><a href="/blog/Lab/" class="nav-link router-link-active">
+  Lab
+</a></div><div class="nav-item"><a href="/blog/etc/" class="nav-link">
+  etc
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Info" class="dropdown-title"><span class="title">Info</span> <span class="arrow down"></span></button> <button type="button" aria-label="Info" class="mobile-dropdown-title"><span class="title">Info</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://v1.vuepress.vuejs.org" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/cheffyjonny/blog/issues" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Contact
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/blog/Lab/" aria-current="page" class="sidebar-link">Guide</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Engineering</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Logic</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/Lab/Logic/big-o-notation/" class="sidebar-link">Big O Notation</a></li><li><a href="/blog/Lab/Logic/closure/" aria-current="page" class="active sidebar-link">Closure</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/Lab/Logic/closure/#what-is-the-closure" class="sidebar-link">What is the Closure?</a></li><li class="sidebar-sub-header"><a href="/blog/Lab/Logic/closure/#examples" class="sidebar-link">Examples</a></li></ul></li><li><a href="/blog/Lab/Logic/data-structure/" class="sidebar-link">Data Structure</a></li><li><a href="/blog/Lab/Logic/hoisting/" class="sidebar-link">Hoisting</a></li><li><a href="/blog/Lab/Logic/window-sliding-technique/" class="sidebar-link">Window Sliding Technique</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="closure"><a href="#closure" class="header-anchor">#</a> Closure</h1> <h2 id="what-is-the-closure"><a href="#what-is-the-closure" class="header-anchor">#</a> What is the Closure?</h2> <p>Closure is a mechanism in JavaScript for handling variable scope. More specially, it refers to the ability of a function to capture and retain the values of its local variables, even after the function has completed execution.</p> <p>Once a function executes, it creates a lexical environment to saves the data inside of the function. Then inner function gets access to the data in the lexical environment.</p> <h2 id="examples"><a href="#examples" class="header-anchor">#</a> Examples</h2> <h3 id="in-javascript-scope"><a href="#in-javascript-scope" class="header-anchor">#</a> In Javascript scope</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> myName <span class="token operator">=</span> <span class="token string">'John'</span>
+
+<span class="token keyword">function</span> <span class="token function">printName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>myName<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">printName</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="outer-function-inner-function"><a href="#outer-function-inner-function" class="header-anchor">#</a> Outer function, inner function</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">makeCounter</span><span class="token punctuation">(</span><span class="token parameter">addValue</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> count <span class="token operator">=</span> <span class="token number">0</span>
+  <span class="token keyword">return</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    count <span class="token operator">+=</span> addValue
+    <span class="token keyword">return</span> count
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> addOne <span class="token operator">=</span> <span class="token function">makeCounter</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+<span class="token keyword">let</span> addTen <span class="token operator">=</span> <span class="token function">makeCounter</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">addOne</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// 1</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">addOne</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// 2</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">addTen</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// 10</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">addTen</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// 20</span>
+</code></pre></div><h3 id="in-react"><a href="#in-react" class="header-anchor">#</a> In React</h3> <p>useState hook use a closure. To update with a new value, it needs to get access to the previous value.</p> <p>Note that code below is just an example to help understanding.</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> value <span class="token operator">=</span> <span class="token keyword">undefined</span>
+<span class="token keyword">function</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token parameter">initValue</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> state <span class="token operator">=</span> value <span class="token operator">||</span> initValue
+  <span class="token keyword">const</span> <span class="token function-variable function">setState</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">newValue</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    value <span class="token operator">=</span> newValue
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> <span class="token punctuation">[</span>state<span class="token punctuation">,</span> setState<span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><br> <br> <div class="language- extra-class"><pre class="language-text"><code>Let's make the world a better place together :)
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last updated:</span> <span class="time">3/6/2024, 11:40:08 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/Lab/Logic/big-o-notation/" class="prev">
+        Big O Notation
+      </a></span> <span class="next"><a href="/blog/Lab/Logic/data-structure/">
+        Data Structure
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><VueCustomTooltip></VueCustomTooltip></div></div>
+    <script src="/blog/assets/js/app.d505e500.js" defer></script><script src="/blog/assets/js/2.9fa96975.js" defer></script><script src="/blog/assets/js/1.1eca5f96.js" defer></script><script src="/blog/assets/js/34.03208e80.js" defer></script>
+  </body>
+</html>
